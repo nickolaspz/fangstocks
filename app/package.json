@@ -1,0 +1,31 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject",
+    "lint": "eslint ./ --ignore-pattern internals/scripts"
+  },
+  "dependencies": {
+    "@babel/eslint-parser": "^7.15.0",
+    "axios": "^0.21.1",
+    "dayjs": "^1.10.6",
+    "expo": "~42.0.1",
+    "expo-status-bar": "~1.0.4",
+    "http-status": "^1.5.0",
+    "moment": "^2.29.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
+    "react-native-calendar-picker": "^7.1.2",
+    "react-native-dotenv": "^3.2.0",
+    "react-native-web": "~0.13.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "eslint": "^7.32.0"
+  },
+  "private": true
+}
