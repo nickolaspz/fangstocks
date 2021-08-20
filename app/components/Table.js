@@ -61,7 +61,7 @@ export default class Table extends Component {
                         <Text style={styles.th}>Close</Text>
                         <Text style={styles.th}>Diff</Text>
                         <Text style={styles.th}>Exchange</Text>
-                        <Text style={styles.th} onClick={() => this.sortByDifference(data) }>
+                        <Text style={styles.th} onPress={() => this.sortByDifference(data) }>
                             {this.state.order === 'ASC' ? '↑' : '↓'}
                         </Text>
                     </View>
@@ -85,30 +85,29 @@ const styles = StyleSheet.create({
         justifyContent: 'center', 
         alignSelf: 'stretch',
         margin: 'auto',
-        minWidth: '350px',
+        minWidth: 350,
     },
     tr: { 
         flex: 1, 
         alignSelf: 'stretch', 
         flexDirection: 'row',
-        height: '15px',
+        height: 15,
     },
     th: {
         flex: 1,
-        fontSize: '3.5vw',
+        fontSize: 15,
         fontWeight: 'bold',
-        fontFamily: 'sans-serif',
         alignSelf: 'stretch',
         textAlign: 'center',
-        padding: '15px',
+        padding: 15,
     },
     td: { 
         flex: 1, 
-        fontSize: '3.5vw',
+        fontSize: 15,
         alignSelf: 'stretch',
-        width: '100px',
+        width: 100,
         textAlign: 'center',
-        padding: '15px',
+        padding: 15,
     },
     negative: {
         color: 'red',

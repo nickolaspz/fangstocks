@@ -13,8 +13,10 @@ export const fetchStock = async (symbol, date) => {
                 'x-api-key': API_KEY,
             }
         });
+
         return response.data;
     } catch (error) {
-        throw new APIError({ message: error.message });
+        // throw new APIError({ message: error.message });
+        return false;
     }
 }

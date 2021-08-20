@@ -40,7 +40,7 @@ export default function App() {
 		<View style={styles.container}>
 			<Text style={styles.header}>
 				FANG stocks
-				<br />
+				{"\n"}
 				{chosenDate
 					&& (
 						<Text> for {moment(chosenDate).format('Do MMM YYYY')}</Text>
@@ -69,13 +69,13 @@ const styles = StyleSheet.create({
 		flex: 1,
 		backgroundColor: '#fff',
 		alignItems: 'center',
-		justifyContent: 'top',
+		justifyContent: 'flex-start',
 	},
 	header: {
-		padding: '20px',
-		fontSize: '30px',
+		marginTop: 20,
+		padding: 20,
+		fontSize: 30,
 		fontWeight: 'bold',
-		fontFamily: 'sans-serif',
 		textAlign: 'center',
 	},
 	calendar: {
