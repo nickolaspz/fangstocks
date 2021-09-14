@@ -1,4 +1,6 @@
 # Fangstock APP
+iOS mobile app to display stocks for a chosen date.
+
 ### Requirements
  - Node 12.x
  - Docker
